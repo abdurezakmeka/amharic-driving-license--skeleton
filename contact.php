@@ -15,7 +15,7 @@
 
      <nav>
          <div class="sitename">
-            <a style="margin-left: 20px; cursor: pointer; text-decoration: none; color: white;" href="index.php"> አ</a>
+            <a class="logo"  href="index.php"> አ</a>
          </div>
          <input type="checkbox" id="toogle">
          <label for="toogle" class="toogle-btn">

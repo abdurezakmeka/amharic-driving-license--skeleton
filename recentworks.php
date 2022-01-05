@@ -11,8 +11,24 @@
 
 </head>
 
-<body>
-    <div class="corre">
+<body style="overflow-y: auto;">
+
+     <nav>
+         <div class="sitename">
+            <a class="logo"  href="index.php"> አ</a>
+         </div>
+         <input type="checkbox" id="toogle">
+         <label for="toogle" class="toogle-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="recentworks.php">Recent works</a></li>
+            <li><a href="contact.php">Contact</a></li>
+         </ul>
+      </nav>
+<div class="corre">
         
     <div class="bass">
         <div class="recentworks">
@@ -28,27 +44,6 @@
         </div>
     </div>
     </div>
-     <nav>
-         <div class="sitename">
-            <a style="margin-left: 20px; cursor: pointer; text-decoration: none; color: white;" href="index.php"> አ</a>
-         </div>
-         <input type="checkbox" id="toogle">
-         <label for="toogle" class="toogle-btn">
-         <i class="fas fa-bars"></i>
-         </label>
-         <ul class="recentworks">
-            <li class="lisstitem"><a class="lisstlink" href="index.php">Home</a></li>
-            <li class="lisstitem"><a class="lisstlink" href="about.php">About</a></li>
-            <li class="lisstitem"><a class="lisstlink" href="recentworks.php">Recent works</a></li>
-            <li class="lisstitem"><a class="lisstlink" href="contact.php">Contact</a></li>
-         </ul>
-      </nav>
-    
- 
-
-    
-
-
 
      <div class="app-footer">
            <p style="text-align: center;">2022 © abdraefreq</p>

@@ -5,6 +5,12 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+.sitename .logo{
+  margin-left: 10px;
+  cursor: pointer; 
+  text-decoration: none; 
+  color: white;
+}
 body{
   overflow: hidden;
 } 
@@ -236,13 +242,18 @@ input[type="checkbox"]{
   background: darkgrey;
   color: white;
 }
-@media (max-width: 1000px){
+@media (max-width: 1024px){
+ .quiz_box header .time_line{
+    display: none;
+  }
   nav{
     padding: 0 40px 0 50px;
   }
 
+
 }
 @media (max-width: 920px) {
+ 
   nav .toogle-btn i{
     display: block;
   }
@@ -388,5 +399,7 @@ input[type="checkbox"]{
 .container{
   margin-bottom: 50px;
 }
-
+.sitename .logo{
+  margin-left: 0;
+}
 }
