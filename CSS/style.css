@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+::-webkit-scrollbar{
+  width: 4px;
+  background-color: #333333;
+}
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color:#aaaaaa ;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -12,7 +25,7 @@
   color: white;
 }
 body{
-  overflow: hidden;
+  overflow: auto;
 } 
 nav{
   display: flex;
@@ -242,6 +255,7 @@ input[type="checkbox"]{
   background: darkgrey;
   color: white;
 }
+
 @media (max-width: 1024px){
  .quiz_box header .time_line{
     display: none;
@@ -384,7 +398,56 @@ input[type="checkbox"]{
   padding: 0 5px;
   min-width: 300px;
 }
+.table-box
+{
+    margin: 75px auto;
+}
 
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+    background: #1b1b1b;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.first-cell{
+    text-align: left;
+    padding-left: 10px;
+}
+.last-cell{
+    border-right: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+  .table-row {
+    font-size: 11px;
+  }
+}
 @media (max-width: 620px){
 .box{
   max-width: 90vw;

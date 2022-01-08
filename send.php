@@ -1,9 +1,17 @@
+<?php
+
+session_start();
+
+$_SESSION['user_id'] = 161872368234;
+header('Location: public.php');
+
+?>
 <?php  
 
 		
 if (isset($_POST['name']) && isset($_POST['email'])&& isset($_POST['message'])) {
 	
-	include 'db_conn.php';
+	include 'connection.php';
 
 	function validate($data){
        $data = trim($data);
@@ -20,11 +28,11 @@ if (isset($_POST['name']) && isset($_POST['email'])&& isset($_POST['message'])) 
 	}else {
 
 		$sql = "INSERT INTO license(name, email, message) VALUES('$name', '$email', '$message')";
-		$res = mysqli_query($conn, $sql);
+		$res = mysqli_query($con, $sql);
 
 		if ($res) {
 		header('Refresh:0; url=contact.php');
-			echo '<script>alert("Message Sucessfully sent")</script>';
+		header("Location: ./confirmation.php");
 		}else {
 			echo "Your message could not be sent!";
 		}

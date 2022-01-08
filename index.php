@@ -1,8 +1,16 @@
+<?php
+
+session_start();
+session_unset(); 
+session_destroy();  
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="img/favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <link rel="stylesheet" href="CSS/style.css">
 <link rel="stylesheet" type="text/css" href="CSS/app.css">
@@ -36,8 +44,7 @@
             </div>
             <img src="img/auto.jpg">
             <div class="text">
-                <p>Automotive quiz bank contains question that are related 
-                to automotive driver license</p>
+                <p>Automotive quiz bank contains question that are related to automotive driver license</p>
     
   
         <select name="selection" id="cat1">
@@ -60,8 +67,8 @@
             </div>
             <img src="img/public.jpg">
             <div class="text">
-                <p>Automotive quiz bank contains question that are related 
-                to automotive driver license</p>
+                <p>Public vehicle quiz bank contains question that are related 
+                to public vehicle driver license</p>
      
         <select name="selection" id="cat2">
             <option value="nothing" selected="selected">Select Level</option>
@@ -82,8 +89,8 @@
             </div>
             <img src="img/dryload.jpg">
             <div class="text">
-                <p>Automotive quiz bank contains question that are related 
-                to automotive driver license</p>
+                <p>Dry load vehicle quiz bank contains question that are related 
+                to dry load vehicle driver license</p>
                         <select name="selection" id="cat3">
             <option value="nothing" selected="selected">Select Level</option>
             <option value="PAGE/dryloadvehicle001.php"> Easy</option>
@@ -100,8 +107,8 @@
             </div>
             <img src="img/liquidload.jpg">
             <div class="text">
-                <p>Automotive quiz bank contains question that are related 
-                to automotive driver license</p>
+                <p>Tanker vehicle quiz bank contains question that are related 
+                to tanker vehicle driver license</p>
                         <select name="selection" id="cat4">
             <option value="nothing" selected="selected">Select Level</option>
             <option value="PAGE/liquidloadvehicle001.php"> Medium</option>
